@@ -16,6 +16,7 @@
 		FCC53FE42615629700B3C911 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC53FE32615629700B3C911 /* main.m */; };
 		FCC53FEE2615629700B3C911 /* JCTabSwitchViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC53FED2615629700B3C911 /* JCTabSwitchViewTests.m */; };
 		FCC53FF92615629700B3C911 /* JCTabSwitchViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC53FF82615629700B3C911 /* JCTabSwitchViewUITests.m */; };
+		FCC5400C261562F200B3C911 /* JCTabSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC5400A261562F200B3C911 /* JCTabSwitchView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		FCC53FF42615629700B3C911 /* JCTabSwitchViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCTabSwitchViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC53FF82615629700B3C911 /* JCTabSwitchViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCTabSwitchViewUITests.m; sourceTree = "<group>"; };
 		FCC53FFA2615629700B3C911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC5400A261562F200B3C911 /* JCTabSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCTabSwitchView.m; sourceTree = "<group>"; };
+		FCC5400B261562F200B3C911 /* JCTabSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCTabSwitchView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 		FCC53FD02615629400B3C911 /* JCTabSwitchView */ = {
 			isa = PBXGroup;
 			children = (
+				FCC54009261562A900B3C911 /* TabSwitchView */,
 				FCC53FD12615629400B3C911 /* AppDelegate.h */,
 				FCC53FD22615629400B3C911 /* AppDelegate.m */,
 				FCC53FD42615629400B3C911 /* SceneDelegate.h */,
@@ -135,6 +139,15 @@
 				FCC53FFA2615629700B3C911 /* Info.plist */,
 			);
 			path = JCTabSwitchViewUITests;
+			sourceTree = "<group>";
+		};
+		FCC54009261562A900B3C911 /* TabSwitchView */ = {
+			isa = PBXGroup;
+			children = (
+				FCC5400B261562F200B3C911 /* JCTabSwitchView.h */,
+				FCC5400A261562F200B3C911 /* JCTabSwitchView.m */,
+			);
+			path = TabSwitchView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +281,7 @@
 			files = (
 				FCC53FD92615629400B3C911 /* ViewController.m in Sources */,
 				FCC53FD32615629400B3C911 /* AppDelegate.m in Sources */,
+				FCC5400C261562F200B3C911 /* JCTabSwitchView.m in Sources */,
 				FCC53FE42615629700B3C911 /* main.m in Sources */,
 				FCC53FD62615629400B3C911 /* SceneDelegate.m in Sources */,
 			);
@@ -444,6 +458,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6K9Q22JTP;
 				INFOPLIST_FILE = JCTabSwitchView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +477,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6K9Q22JTP;
 				INFOPLIST_FILE = JCTabSwitchView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
